@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Courseware</title>
+<link rel="stylesheet" href="111.css">
+
+<header>
+  <h1>Study in Australia</h1> 
+  <nav class="navbar">
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="courseware.html">Courseware</a>
+    <a href="enquiry.html">Enquiry</a>
+    <div class="dropdown">
+      <button class="dropbtn">Showcase</button>
+      <div class="dropdown-content">
+        <a href="showcase1.html">Showcase 1</a>
+        <a href="showcase2.html">Showcase 2</a>
+        <a href="showcase3.html">Showcase 3</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<body>
+<!-- Courseware内容 -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<script>
+function checkLogin() {
+    var isLogged = Cookies.get('isLoggedIn');
+    if (isLogged !== 'true') {
+        window.location.href = 'login.html';
+    }
+}
+
+document.addEventListener('DOMContentLoaded', checkLogin);
+</script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Showcase Website</title>
+<link rel="stylesheet" href="111.css"> <!-- 确保这个路径指向您的CSS文件 -->
+<div class="container">
+<header>
+  <h1>Study in Australia</h1> 
+  <nav class="navbar">
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="courseware.html">Courseware</a>
+    <a href="enquiry.html">Enquiry</a>
+    <div class="dropdown">
+      <button class="dropbtn">Showcase</button>
+      <div class="dropdown-content">
+        <a href="showcase1.html">Showcase 1</a>
+        <a href="showcase2.html">Showcase 2</a>
+        <a href="showcase3.html">Showcase 3</a>
+      </div>
+    </div>
+  </nav><!-- 网站名称 -->
+</header>
+<body>
+
+
+<div class="enquiry-container">
+  <form class="enquiry-form">
+    <h2>Enquiry Form</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="course">Course of Interest:</label>
+    <select id="course" name="course">
+      <option value="">Leadership and Management</option>
+      <option value="">Information and Technology</option>
+      <option value="">Project Management</option>
+      <option value="">Trade Courses</option>
+      <option value="">General English</option>
+    </select>
+    
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required>
+    
+    <label for="major">Major:</label>
+    <select id="major" name="major">
+      <option value="">BSB40520</option>
+      <option value="">ICT50200</option>
+      <option value="">CPC30620</option>
+    </select>
+    
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender">
+      <option value="">--Please select a Gender--</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+    
+    <button type="submit">Submit Enquiry</button>
+  </form>
+</div>
+
+<div class="footer">
+  <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+</div>
+</div>
+</body>
+</html>

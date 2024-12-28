@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="111.css"> <!-- 确保这个路径指向你的CSS文件 -->
+</head>
+<body>
+    <div class="register-container">
+        <h2>Register</h2>
+        <form class="register-form" id="registerForm" onsubmit="return register()">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <script>
+        function register() {
+            // 获取表单数据
+            var username = document.getElementById('username').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            var confirmPassword = document.getElementById('confirm-password').value;
+
+            // 检查密码是否匹配
+            if (password !== confirmPassword) {
+                alert('Passwords do not match!');
+                return false; // 阻止表单提交
+            }
+
+            // 这里添加将数据发送到服务器的代码
+            // 例如使用fetch API或者XMLHttpRequest发送异步请求
+
+            // 假设注册成功，重定向到登录页面
+            window.location.href = 'login.html';
+            return false; // 阻止表单默认提交行为
+        }
+    </script>
+</body>
+</html>
