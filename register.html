@@ -39,6 +39,9 @@
                 alert('Passwords do not match!');
                 return false; // 阻止表单提交
             }
+            
+            setCookie("username", username, 7);
+            setCookie("password", password, 7);
 
             // 这里添加将数据发送到服务器的代码
             // 例如使用fetch API或者XMLHttpRequest发送异步请求
@@ -47,6 +50,17 @@
             window.location.href = 'login.html';
             return false; // 阻止表单默认提交行为
         }
+
+
+        function setCookie(name, value, days) {
+   var expires = "";
+   if (days) {
+       var date = new Date();
+       date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+       expires = "; expires=" + date.toUTCString();
+   }
+   document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+}
     </script>
 </body>
 </html>
