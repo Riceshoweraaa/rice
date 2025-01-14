@@ -11,7 +11,8 @@ function checkLogin() {
 window.onload = function() {
     checkLogin(); // 调用外部文件中的checkLogin函数
 };
-// Get all "Add" buttons
+
+ // Get all "Add" buttons
 const addButtons = document.querySelectorAll('.button.add');
 
 // Get the cart table and total amount element
