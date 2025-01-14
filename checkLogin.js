@@ -8,9 +8,7 @@ function checkLogin() {
         loadCoursewareContent();
     }
 }
-window.onload = function() {
-    checkLogin(); // 调用外部文件中的checkLogin函数
-};
+
 
  // Get all "Add" buttons
 const addButtons = document.querySelectorAll('.button.add');
