@@ -25,38 +25,3 @@
     </div>
 </body>
 </html>
-<script>
-
-function login(){
-    //获取输入框账号密码
-    var username = document.getElementById('username').value;
-    var password = document.getElementById('password').value;
-
-    //获取cookie里的账号密码
-    var CookieUsername = document.cookie.match(/(?:^|;)\s*username=([^;]+)/)[1];
-    var CookiePassword = document.cookie.match(/(?:^|;)\s*password=([^;]+)/)[1];
-
-    //值一样登录成功
-    if(username == CookieUsername && password == CookiePassword)
-    {
-        setCookie("isLoggedIn", true, 7);
-
-        window.open("index.html");
-    }else{
-
-        alert("请先输入正确的账号密码")
-    }
-
-}
-
-//保存cookie函数
-function setCookie(name, value, days) {
-   var expires = "";
-   if (days) {
-       var date = new Date();
-       date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-       expires = "; expires=" + date.toUTCString();
-   }
-   document.cookie = name + "=" + (value || "")  + expires + "; path=/";
-}
-</script>
