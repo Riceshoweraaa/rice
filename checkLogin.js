@@ -8,11 +8,9 @@ function checkLogin() {
         loadCoursewareContent();
     }
 }
-<script>
 window.onload = function() {
     checkLogin(); // 调用外部文件中的checkLogin函数
 };
-</script>
 function loadCoursewareContent() {
     // 在这里加载courseware页面的内容
     console.log('Loading courseware content for logged in user.');
