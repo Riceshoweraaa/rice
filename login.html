@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="111.css"> <!-- 确保这个路径指向你的CSS文件 -->
+    <link rel="stylesheet" href="111.css"> 
 </head>
 <body>
     <div class="login-container">
@@ -18,7 +18,7 @@
 
             <button onclick="login()">Login</button>
         </form>
-        <!-- 注册按钮 -->
+        
         <div class="register-link">
             Not a member? <a href="register.html">Register here</a>
         </div>
@@ -28,15 +28,15 @@
 <script>
 
 function login(){
-    //获取输入框账号密码
+    
     var username = document.getElementById('username').value;
     var password = document.getElementById('password').value;
 
-    //获取cookie里的账号密码
+    
     var CookieUsername = document.cookie.match(/(?:^|;)\s*username=([^;]+)/)[1];
     var CookiePassword = document.cookie.match(/(?:^|;)\s*password=([^;]+)/)[1];
 
-    //值一样登录成功
+    
     if(username == CookieUsername && password == CookiePassword)
     {
         setCookie("isLoggedIn", true, 7);
@@ -44,12 +44,12 @@ function login(){
         window.open("index.html");
     }else{
 
-        alert("请先输入正确的账号密码")
+        alert
     }
 
 }
 
-//保存cookie函数
+
 function setCookie(name, value, days) {
    var expires = "";
    if (days) {
