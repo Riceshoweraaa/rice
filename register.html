@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register Page</title>
-    <link rel="stylesheet" href="111.css"> <!-- 确保这个路径指向你的CSS文件 -->
+    <link rel="stylesheet" href="111.css"> 
 </head>
 <body>
     <div class="register-container">
@@ -28,27 +28,27 @@
 
     <script>
         function register() {
-            // 获取表单数据
+            
             var username = document.getElementById('username').value;
             var email = document.getElementById('email').value;
             var password = document.getElementById('password').value;
             var confirmPassword = document.getElementById('confirm-password').value;
 
-            // 检查密码是否匹配
+            
             if (password !== confirmPassword) {
                 alert('Passwords do not match!');
-                return false; // 阻止表单提交
+                return false; 
             }
             
             setCookie("username", username, 7);
             setCookie("password", password, 7);
 
-            // 这里添加将数据发送到服务器的代码
-            // 例如使用fetch API或者XMLHttpRequest发送异步请求
+            
+            
 
-            // 假设注册成功，重定向到登录页面
+            
             window.location.href = 'login.html';
-            return false; // 阻止表单默认提交行为
+            return false; 
         }
 
 
