@@ -405,3 +405,32 @@ footer {
 .register-form button:hover {
   background-color: #003a81;
 }
+
+/* main样式 */
+.projects-container {
+    padding: 20px; /* 设置内边距 */
+}
+.project {
+    background-color: #fff; /* 设置背景颜色 */
+    margin-bottom: 20px; /* 设置外边距 */
+    padding: 20px; /* 设置内边距 */
+    border-radius: 5px; /* 设置圆角 */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 设置阴影效果 */
+}
+.project h2 {
+    font-size: 24px; /* 设置字体大小 */
+    margin-bottom: 10px; /* 设置外边距 */
+}
+.project-image {
+    max-width: 100%; /* 图片最大宽度 */
+    height: auto; /* 图片高度自适应 */
+    margin-bottom: 15px; /* 设置外边距 */
+}
+.project p {
+    font-size: 16px; /* 设置字体大小 */
+    margin-bottom: 15px; /* 设置外边距 */
+}
+.project h3 {
+    font-size: 18px; /* 设置字体大小 */
+    color: #666; /* 设置文字颜色 */
+}
